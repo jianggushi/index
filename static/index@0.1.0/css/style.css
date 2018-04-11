@@ -5799,12 +5799,12 @@ figure {
 /* *********************** */
 /*公司理念*/
 .philosophy{
-	/*border-bottom: 1px solid #f3f3f3;*/
-	padding-top: 45px;
+	border-bottom: 1px solid #ccc;
+	padding-top: 130px;
 	padding-bottom:50px;
 	margin-bottom: 30px;
-	background-color: #5788CD;
-	color: #fff;
+	background-color: #fff;
+	/*color: #333;*/
 }
 .section-title hr {
     border-color: #5788CD;
@@ -5908,6 +5908,9 @@ figure {
     margin-right: 10px;
 }
 /*联系方式*/
+section.contact {
+    padding-top: 90px;
+}
 .contact-info {
     text-align: center;
     font-size: 22px;
