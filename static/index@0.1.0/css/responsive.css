@@ -26,7 +26,7 @@
 	}
 	
 	.main-menu .navigation > li{
-		margin-left:20px;	
+		margin-left:10px;	
 	}
 	
 	.fluid-section .content-column .inner{
@@ -114,7 +114,7 @@
 	.header-style-two .info-box strong,
 	.header-style-three .main-menu .navigation > li > a{
 		font-size:16px;
-		color: #777777;
+		color: #fff;
 	}
 	
 	.services-section-two .services-block-three{
@@ -237,6 +237,7 @@
 		visibility:hidden;
 		opacity:0;
 	}
+	
 }
 
 @media only screen and (max-width: 1023px){
@@ -437,7 +438,7 @@
 	
 	.header-style-three .main-menu .navigation > li > a{
 		padding:10px;
-		color: #777777;
+		color: #fff;
 	}
 	
 	.header-style-four .main-menu .navigation > li{
@@ -636,7 +637,8 @@
 		-webkit-border-radius:3px;
 		-o-border-radius:3px;
 		border-radius:3px;
-		box-shadow:none;	
+		box-shadow:none;
+		/*background-color: #fff;	*/
 	}
 	
 	.main-menu .navbar-header{
@@ -650,7 +652,7 @@
 		z-index:12;
 	}
 	
-	.main-menu .navbar-header .navbar-toggle{
+	/*.main-menu .navbar-header .navbar-toggle{
 		display:inline-block;
 		z-index:12;
 		border:1px solid #03c7d9;
@@ -658,9 +660,9 @@
 		margin:-2px 0px 0px 0px;
 		border-radius:0px;
 		background:#03c7d9;
-	}
+	}*/
 	
-	.header-style-three .main-menu .navbar-header .navbar-toggle{
+	/*.header-style-three .main-menu .navbar-header .navbar-toggle{
 		border:1px solid #ff5151;
 		background:#ff5151;
 	}
@@ -678,21 +680,21 @@
 	.header-style-six .main-menu .navbar-header .navbar-toggle{
 		border:1px solid #00d541;
 		background:#00d541;
-	}
+	}*/
 	
-	.main-menu .navbar-header .navbar-toggle .icon-bar{
-		background:#5788CD;	
+	/*.main-menu .navbar-header .navbar-toggle .icon-bar{
+		background:#fff;	
 	    width: 28px;
 		height: 3px;
 	}
 	.navbar-toggle .icon-bar+.icon-bar {
     	margin-top: 6px;
-	}
+	}*/
 	.main-menu .navbar-collapse > .navigation{
 		float:none !important;
 		margin:0px !important;
 		width:100% !important;
-		/*background:#2c2c2c;*/
+		background:#346cb6;
 		/*border:1px solid rgba(255,255,255,0.30);*/
 		border-top:none;
 	}
@@ -778,8 +780,8 @@
 	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a{
 		padding:8px 20px 8px !important;
 		line-height:22px;
-		color:#5788CD;
-		background:#fff;
+		color:#fff;
+		background:#346cb6;
 		text-align:left;
 		font-size:16px;
 		text-align: center;
