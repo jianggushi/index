@@ -745,7 +745,7 @@ img{
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
-	background: #346cb6;
+	background: #337ab7;
 }
 
 .main-header.fixed-header .main-box{
@@ -5800,7 +5800,7 @@ figure {
 /*公司理念*/
 .philosophy{
 	border-bottom: 1px solid #ccc;
-	padding-top: 130px;
+	padding-top: 85px;
 	padding-bottom:50px;
 	margin-bottom: 30px;
 	background-color: #fff;
@@ -6015,7 +6015,39 @@ section.contact {
 button.btn.btn-primary.center-block {
     margin-top: 35px;
 }
-
+/*蓝色分块*/
+.se-p-bg-color{
+	background:#337ab7;
+}
+.short-banner {
+    padding: 40px 0;
+    /*margin-bottom: 85px;*/
+}
+.short-banner h4 {
+	font-size: 28px;
+    color: #fff;
+    /*margin-top: 10px;*/
+}
+.float-left {
+    float: left;
+}
+.short-banner a {
+    width: 170px;
+    line-height: 46px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    /*border-radius: 30px;*/
+}
+.se-s-color{
+	color: #ffdf33;
+}
+.float-right{
+	float: right;
+}
 @media screen and (max-width: 1280px) and (min-width: 1025px) {
 	#main{
 		width: 800px;
@@ -6052,6 +6084,14 @@ button.btn.btn-primary.center-block {
 	.ehover4 article.info3 {
 	    padding: 45px 0px 5px 5px;
 	    font-size: 10px;
+	}
+	.short-banner{
+		padding:30px 0;
+	}
+	.short-banner h4{
+		font-size: 24px;
+		height: 46px;
+		line-height: 46px;
 	}
 
 }
@@ -6164,6 +6204,12 @@ button.btn.btn-primary.center-block {
 	.dataType-text h3 {
 	    margin-left:15px;
 	}
+	.philosophy{
+		padding-top: 20px;
+	}
+	section.contact{
+		padding-top: 40px;
+	}
 	
 }
 @media screen and (max-width: 768px) and (min-width: 767px) {
@@ -6202,7 +6248,7 @@ button.btn.btn-primary.center-block {
 }
 @media screen and (max-width: 560px){
 	.fontCont{
-		top:40px;
+		top:30px;
 	}
 	.fontCont h1{
 	    font-size: 28px !important;
@@ -6257,6 +6303,14 @@ button.btn.btn-primary.center-block {
 	     margin-top: 32px; 
 	    
 	}
+	.short-banner{
+		padding:20px 0 15px 0;
+	}
+	.short-banner h4{
+		font-size: 14px;
+		height: 32px;
+		line-height: 32px;
+	}
 	
 }
 @media screen and (max-width: 420px){
@@ -6287,7 +6341,18 @@ button.btn.btn-primary.center-block {
 	.ehover4 h2 {
 	    transform: translateY(110px);
 	}
+	.short-banner a{
+		width: 100px;
+	    line-height: 32px;
+	    border: 1px solid #fff;
+	    font-size: 12px;
+	}
 	
+}
+@media screen and (max-width: 375px){
+	.short-banner a{
+	    /*margin-top: 10px;*/
+	}
 }
 @media screen and (max-width: 320px){
 	.fontCont{
@@ -6309,10 +6374,6 @@ button.btn.btn-primary.center-block {
 	.sec-title.centered .text{
 		margin:10px 15px 0px 15px;
 	}
-	/*联系方式*/
-	/*.info-mail .mail-active{
-		font-size: 12px;
-	}*/
 	.support-icon {
 	    width: 60px;
 	    height: 60px;
@@ -6327,37 +6388,8 @@ button.btn.btn-primary.center-block {
 	.ehover4 h2 {
 	    transform: translateY(80px);
 	}
-}
-/*蓝色分块*/
-.se-p-bg-color{
-	background:#5788CD;
-}
-.short-banner {
-    padding: 40px 0;
-    /*margin-bottom: 85px;*/
-}
-.short-banner h4 {
-	font-size: 28px;
-    color: #fff;
-    /*margin-top: 10px;*/
-}
-.float-left {
-    float: left;
-}
-.short-banner a {
-    width: 170px;
-    line-height: 46px;
-    border: 2px solid #fff;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 500;
-    color: #fff;
-    text-align: center;
-    /*border-radius: 30px;*/
-}
-.se-s-color{
-	color: #ffdf33;
-}
-.float-right{
-	float: right;
+	.short-banner a{
+		width: 110px;
+	    /*margin-top: 10px;*/
+	}
 }

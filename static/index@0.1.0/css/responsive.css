@@ -439,6 +439,7 @@
 	.header-style-three .main-menu .navigation > li > a{
 		padding:10px;
 		color: #fff;
+		font-size: 13px;
 	}
 	
 	.header-style-four .main-menu .navigation > li{
@@ -608,11 +609,11 @@
 	}
 	
 	.sec-title h2{
-		font-size:24px;	
+		font-size:22px;	
 	}
 	
 	.main-menu .collapse {
-	   max-height:300px;
+	   /*max-height:300px;*/
 		overflow:auto;
 		float:none;
 		width:100%;
@@ -692,11 +693,9 @@
 	}*/
 	.main-menu .navbar-collapse > .navigation{
 		float:none !important;
-		margin:0px !important;
+		/*margin:0px !important;
 		width:100% !important;
-		background:#346cb6;
-		/*border:1px solid rgba(255,255,255,0.30);*/
-		border-top:none;
+		border-top:none;*/
 	}
 	
 	.main-menu .navbar-collapse > .navigation > li{
@@ -764,11 +763,11 @@
 	.main-menu .navbar-collapse > .navigation > li > ul > li,
 	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li{
 		/*border-top:1px solid rgba(255,255,255,0.30) !important;*/
-		border-bottom:none;
+		/*border-bottom:none;
 		opacity:1 !important;
 		top:0px !important;
 		left:0px !important;
-		visibility:visible !important;
+		visibility:visible !important;*/
 	}
 	
 	.main-menu .navbar-collapse > .navigation > li:first-child{
@@ -778,11 +777,10 @@
 	.main-menu .navbar-collapse > .navigation > li > a,
 	.main-menu .navbar-collapse > .navigation > li > ul > li > a,
 	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a{
-		padding:8px 20px 8px !important;
-		line-height:22px;
+		/*padding:8px 20px 8px !important;
+		line-height:22px;*/
 		color:#fff;
-		background:#346cb6;
-		text-align:left;
+		background:#337ab7;
 		font-size:16px;
 		text-align: center;
 	}
