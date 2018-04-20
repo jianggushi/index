@@ -14,7 +14,7 @@ var marker,marker2, map = new AMap.Map('container',{
             return;
         }
         marker = new AMap.Marker({
-            icon: "http://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+            icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
             position: [120.714746,31.322094]
         });
 
@@ -28,7 +28,7 @@ var marker,marker2, map = new AMap.Map('container',{
         // 点标记中的图标
         var markerImg = document.createElement("img");
         markerImg.className = "markerlnglat";
-        markerImg.src = "http://webapi.amap.com/theme/v1.3/markers/n/mark_r.png";
+        markerImg.src = "https://webapi.amap.com/theme/v1.3/markers/n/mark_r.png";
         markerContent.appendChild(markerImg);
 
         // 点标记中的文本
