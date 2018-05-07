@@ -41,12 +41,23 @@ body {
 	color:#777777;
 	line-height:1.8em;
 	font-weight:400;
-	background:#ffffff;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	font-family: 'SourceNormal', sans-serif;
+	background-color:#ffffff;
 }
-
+.bg{
+	background-image: url("../../images/bg.jpg");
+	background-repeat: no-repeat;
+	background-position: fixed;
+	background-size: 100%;
+	position: fixed;
+	top: 0;
+	left:0;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+}
 a{
 	text-decoration:none;
 	cursor:pointer;
@@ -4703,7 +4714,7 @@ padding:15px 0;
 
 .experiance-section-two{
 	position:relative;
-	background:#5788C0 ;
+	background:#5788c0cf ;
 }
 
 .experiance-section-two .big-work{
@@ -4734,7 +4745,7 @@ padding:15px 0;
 }
 
 .services-block-ten .inner-box:hover{
-	background-color:#ffffff;
+	background-color:rgba(255,255,255,0.9);
 }
 
 .services-block-ten .inner-box .icon-box{
@@ -4745,7 +4756,9 @@ padding:15px 0;
 	margin-bottom:20px;
 }
 .Business{
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
+	padding-bottom: 30px;
+	background-color: #fff;
 }
 .Business .services-block-ten .inner-box .icon-box{
 	position:relative;
@@ -4956,8 +4969,11 @@ padding:15px 0;
 	height:560px;
 }*/
 .thisMap{
-	margin-top: 40px;
-	margin-bottom: 10px;
+	/*margin-top: 40px;
+	margin-bottom: 10px;*/
+	padding-top: 40px;
+	padding-bottom: 10px;
+	background-color: #fff;
 }
 .thisMap b{
 	font-size: 24px; color: #346cb6
@@ -5359,6 +5375,7 @@ carousel-inner {
     color: #fff;
 	font-weight: bold;
 	background-color: rgba(0,0,0,0.3);
+	border-radius: 5px;
 }
 .single_we-do .title p{
 	position:absolute;
@@ -5376,6 +5393,7 @@ carousel-inner {
 }
 figure.typeImg {
 	margin: 10px 0;
+	border-radius:5px;
 }
 .single_we-do:hover figure >img {
 	opacity: 0.8;
@@ -5551,9 +5569,9 @@ figure {
 .model{
 	border-bottom: 1px solid #BDBDBD;
 	padding-top: 50px;
-	padding-bottom: 50px;
-	margin-bottom: 30px;
-	background-color: #5788CD;
+	padding-bottom: 80px;
+	/*margin-bottom: 30px;*/
+	background-color: #5788cdde;
 }
 .model h2{
 	color: #fff;
@@ -5654,8 +5672,8 @@ figure {
 	border: 1px solid #ddd;
 }
 .model li.active a{
-	background-color: #5788cd !important;
-	border-bottom-color: #5788cd !important;
+	background-color: transparent !important;
+	border-bottom-color: #4c7ec7de !important;
 	color: #fff;
 }
 .model a{
@@ -5669,8 +5687,8 @@ figure {
 }
 .model a:hover{
 	color: #fff;
-	background-color: #5788cd !important;
-	border-bottom-color: #5788cd !important;
+	background-color: #5788cdde !important;
+	border-bottom-color: #4c7ec7de !important;
 }
 /*core*/
 .core .container{
@@ -6017,14 +6035,14 @@ button.btn.btn-primary.center-block {
 }
 /*蓝色分块*/
 .se-p-bg-color{
-	background:#337ab7;
+	background:#337ab7c4;
 }
 .short-banner {
     padding: 40px 0;
     /*margin-bottom: 85px;*/
 }
 .short-banner h4 {
-	font-size: 28px;
+	font-size: 30px;
     color: #fff;
     /*margin-top: 10px;*/
 }
@@ -6032,14 +6050,15 @@ button.btn.btn-primary.center-block {
     float: left;
 }
 .short-banner a {
-    width: 170px;
-    line-height: 46px;
+    width: 160px;
+    line-height: 42px;
     border: 2px solid #fff;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
     color: #fff;
     text-align: center;
+    border-radius: 5px;
     /*border-radius: 30px;*/
 }
 .se-s-color{
