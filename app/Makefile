@@ -27,6 +27,8 @@ clean:
 	rm -f $(BINARY_WINDOWS_AMD64)
 	rm -f $(BINARY_DARWIN_AMD64)
 
+build-all: build-linux-amd64 build-windows-amd64 build-darwin-amd64
+
 # Cross compilation
 build-linux-amd64:
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 $(GOBUILD) -o $(BINARY_LINUX_AMD64) -v
