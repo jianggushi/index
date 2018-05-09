@@ -1,6 +1,6 @@
 var marker,marker2, map = new AMap.Map('container',{
 	    zoom: 15,
-	    center: [120.714746,31.322094]//new AMap.LngLat(116.39,39.9)
+	    center: [120.738816,31.258057]//new AMap.LngLat(116.39,39.9)
 	});
 	// AMap.event.addDomListener(document.getElementById('addMarker'), 'click', function() {
  //        addMarker();
@@ -15,7 +15,7 @@ var marker,marker2, map = new AMap.Map('container',{
         }
         marker = new AMap.Marker({
             icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
-            position: [120.714746,31.322094]
+            position: [120.738816,31.258057]
         });
 
         marker.setMap(map);
@@ -34,10 +34,10 @@ var marker,marker2, map = new AMap.Map('container',{
         // 点标记中的文本
         var markerSpan = document.createElement("span");
         markerSpan.className = 'marker';
-        markerSpan.innerHTML = "苏州市时代广场广运大厦515室";
+        markerSpan.innerHTML = "苏州纳米技术国家大学科技园E栋603";
         markerContent.appendChild(markerSpan);
 
         marker.setContent(markerContent); //更新点标记内容
-        marker.setPosition([120.714746,31.322094]); //更新点标记位置
+        marker.setPosition([120.738816,31.258057]); //更新点标记位置
     }
   updateMarker();
