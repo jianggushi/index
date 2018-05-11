@@ -572,8 +572,9 @@
       }(),
       language:(navigator.browserLanguage || navigator.language).toLowerCase()
     }
-    if(browser.versions.mobile||browser.versions.android||browser.versions.ios){ 
-      ;
+    //判断是否移动端
+    if(browser.versions.mobile||browser.versions.android||browser.versions.ios){
+      consloe.log("移动端"); 
     }else{
       window.onresize = function() {
         location.reload();
