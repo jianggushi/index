@@ -85,7 +85,4 @@
     ]  
 };  
  myChart.setOption(option);  
- window.onresize = function() {
-    location.reload();
-} 
   
