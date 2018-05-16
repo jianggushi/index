@@ -1,6 +1,6 @@
 var marker,marker2, map = new AMap.Map('container',{
 	    zoom: 15,
-	    center: [120.738816,31.258057]//new AMap.LngLat(116.39,39.9)
+	    center: [120.743548,31.258443]//new AMap.LngLat(116.39,39.9), 
 	});
 	// AMap.event.addDomListener(document.getElementById('addMarker'), 'click', function() {
  //        addMarker();
