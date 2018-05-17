@@ -1,0 +1,974 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('../../font-awesome@4.7.0/dist/css/font-awesome.min.css');
+@import url('../../flaticon/css/flaticon.css');
+@import url('../../animate.css@3.5.2/dist/animate.min.css');
+/*font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Lato', sans-serif;*/
+@font-face {
+  font-family: 'SourceNormal';
+  src: url('../fonts/SourceHanSans-Normal.otf');
+}
+/*** 
+
+====================================================================
+	Reset
+====================================================================
+
+ ***/
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+}
+/*** 
+
+====================================================================
+	Global Settings
+====================================================================
+
+ ***/
+.bg-blue {
+  background-color: #5788c0cf;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.font-white {
+  color: #ffffff;
+}
+.font-grey {
+  color: #444;
+}
+body {
+  position: relative;
+  font-size: 15px;
+  color: #777777;
+  line-height: 1.8em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-family: 'SourceNormal', sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -moz-user-select: none;
+  /*火狐*/
+  -webkit-user-select: none;
+  /*webkit浏览器*/
+  -ms-user-select: none;
+  /*IE10*/
+  -khtml-user-select: none;
+  /*早期浏览器*/
+  user-select: none;
+}
+.bg {
+  background-image: url("../../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  font-weight: normal;
+  margin: 0px;
+  background: none;
+  line-height: 1.6em;
+  font-family: 'SourceNormal', sans-serif;
+}
+input,
+button,
+select,
+textarea {
+  font-family: 'SourceNormal', sans-serif;
+}
+p {
+  position: relative;
+  line-height: 1.8em;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+/* ***************** */
+.text-center {
+  text-align: center;
+}
+h2 {
+  font-size: 38px;
+}
+.section-spacing {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.logo img {
+  height: 35px;
+  width: 35px;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+/* 锚点偏移 */
+.targey-fix {
+  position: relative;
+  top: -70px;
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+.page-wrapper {
+  position: relative;
+}
+/*** 
+
+====================================================================
+	 头部导航
+====================================================================
+
+ ***/
+.navbar-brand {
+  padding: 7px 15px;
+}
+nav.navbar-default img {
+  width: 35px;
+}
+.header-top nav.navbar-default {
+  background-color: #337ab7c4;
+}
+.header-scoll nav.navbar-default {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+.header-top .navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.header-scoll .navbar-default .navbar-nav > li > a {
+  color: #333;
+}
+header.mainHeader.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  -ms-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -ms-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+  -ms-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -ms-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > .dropdown > a:focus,
+.header-scoll .navbar-default .navbar-nav > .active > a,
+.header-scoll .navbar-default .navbar-nav > .active > a:focus,
+.header-scoll .navbar-default .navbar-nav > .active > a:hover {
+  color: #ffffff;
+  background-color: #5788c0 !important;
+}
+/*** 
+
+====================================================================
+	 轮播部分
+====================================================================
+
+ ***/
+.logoSlider {
+  width: 150px;
+  margin: 0 auto;
+}
+.bannerBox {
+  max-height: 90vh;
+  overflow: hidden;
+}
+.carousel-caption {
+  top: 15%;
+}
+.carousel-caption h3 {
+  color: #337ab7;
+  font-size: 65px;
+}
+.carousel-caption p {
+  font-size: 30px;
+  color: #337ab7;
+}
+.carousel-caption button {
+  margin: 30px auto;
+}
+/*** 
+
+====================================================================
+	蓝色分块
+====================================================================
+
+ ***/
+.short-banner {
+  padding: 40px 0;
+  background: #337ab7c4;
+}
+.short-banner h4 {
+  font-size: 30px;
+  color: #ffffff;
+}
+.short-banner a {
+  width: 160px;
+  line-height: 42px;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.se-s-color {
+  color: #ffdf33;
+}
+/*** 
+
+====================================================================
+	 服务展示
+====================================================================
+
+ ***/
+.title-note {
+  max-width: 790px;
+  margin: 20px auto;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.serve-type {
+  position: relative;
+  margin-top: 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  overflow: hidden;
+}
+.serve-type:hover img.serve-img {
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -webkit-transition: transform 1s ease;
+}
+.serve-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.serve-name p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+/*** 
+
+====================================================================
+	model
+====================================================================
+
+ ***/
+.model {
+  border-bottom: 1px solid #BDBDBD;
+}
+.model h3 {
+  color: #ffffff;
+}
+.model h5 {
+  color: #ffffff;
+}
+.model a {
+  color: #ffffff;
+}
+.model a:hover {
+  color: #ffffff;
+  background-color: transparent !important;
+  border-bottom-color: #5788c0db !important;
+}
+.model .tab-content {
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -ms-border-radius: 0px 0px 5px 5px;
+  -o-border-radius: 0px 0px 5px 5px;
+  border: 1px solid #ddd;
+}
+.model .nav-tabs {
+  border: none;
+}
+.modelCN h5 {
+  font-size: 18px;
+}
+.step-item:after {
+  content: '';
+  display: block;
+  width: 178px;
+  height: 29px;
+  background: url(../../images/step-arrow.png) center no-repeat;
+  position: absolute;
+  top: 120%;
+  left: 65%;
+}
+.step-item2:after {
+  content: '';
+  display: block;
+  width: 178px;
+  height: 29px;
+  background: none;
+  position: absolute;
+  top: 120%;
+  left: 65%;
+}
+.model-top {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.steps-list .step-item {
+  text-align: center;
+  position: relative;
+  margin-bottom: 60px;
+}
+.steps-list .step-item .item-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.steps-list .item-icon {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  line-height: 80px;
+  text-align: center;
+  text-indent: 1px;
+  background-color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: #5788CD;
+  font-size: 24px;
+}
+.steps-list .step-item .item-icon:before {
+  content: attr(data-count);
+  border: 5px solid #cccccc;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #5788CD;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  text-indent: 0;
+}
+.dataType-text h3 {
+  border-left: 5px solid #ffffff;
+  text-indent: 15px;
+  line-height: 20px;
+  margin-left: 45px;
+}
+.model li.active a {
+  background-color: transparent !important;
+  border-bottom-color: #5788c0db !important;
+  color: #ffffff;
+}
+.model li.active a:focus {
+  color: #ffffff;
+}
+/*** 
+
+====================================================================
+	core
+====================================================================
+
+***/
+.core {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  margin-top: 30px;
+}
+.core h2 {
+  position: relative;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  background: rgba(0, 0, 0, 0.6);
+  transform: translateY(95px);
+  -ms-transform: translateY(95px);
+  -moz-transform: translateY(95px);
+  -webkit-transform: translateY(95px);
+  -o-transform: translateY(95px);
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.core img {
+  position: relative;
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+}
+.core .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(75, 75, 75, 0.3);
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.core article.info {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  background-color: transparent;
+  opacity: 0;
+  transform: scale(0);
+  -ms-transform: scale(0);
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  -o-transform: scale(0);
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  font-weight: normal;
+  margin: -25px 15px 0 15px;
+  text-align: left;
+}
+.core article.info1 {
+  padding: 60px 75px 55px 75px;
+}
+.core article.info2 {
+  padding: 60px 15px 55px 35px;
+}
+.core article.info3 {
+  padding: 45px 15px 5px 15px;
+}
+.core:hover .overlay {
+  background-color: rgba(75, 75, 75, 0.7);
+}
+.core:hover img {
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.core:hover h2 {
+  transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+  -o-transform: translateY(20px);
+}
+.core:hover article.info {
+  opacity: 1;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+}
+/*** 
+
+====================================================================
+	优势 Section Style
+====================================================================
+
+***/
+.inner-box {
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+  padding: 15px 0px 20px 0px;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.inner-box a {
+  color: #ffffff;
+}
+.inner-box .icon-box {
+  position: relative;
+  color: #ffffff;
+  font-size: 56px;
+  line-height: 2em;
+}
+.inner-box .text {
+  position: relative;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.8em;
+  padding: 0 10px;
+}
+.inner-box:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.inner-box:hover a {
+  color: #333;
+}
+.inner-box:hover .icon-box {
+  color: #5788c0;
+}
+.inner-box:hover .text {
+  color: rgba(0, 0, 10, 0.65);
+}
+/*** 
+
+====================================================================
+	Map Section Style
+====================================================================
+
+***/
+.thisMap {
+  background-color: #ffffff;
+}
+.thisMap b {
+  font-size: 24px;
+  color: #346cb6;
+}
+#main {
+  width: 1170px;
+  height: 500px;
+  margin: 0px auto;
+}
+/*** 
+
+====================================================================
+	footer
+====================================================================
+
+ ***/
+.main-footer {
+  position: relative;
+  padding: 20px 10px 20px;
+  background: #337ab7c4;
+}
+.main-footer .footer-bottom {
+  position: relative;
+  max-width: 970px;
+  margin: 0 auto;
+}
+.main-footer .footer-bottom .logo {
+  position: relative;
+  margin-bottom: 15px;
+}
+.main-footer .footer-bottom .copyright {
+  position: relative;
+  color: #ffffff;
+  font-size: 16px;
+}
+.main-footer .footer-bottom .copyright a {
+  color: #ffffff;
+}
+.footer-info {
+  color: #ffffff;
+  font-size: 18px;
+}
+.footer-info a {
+  color: #ffffff;
+  font-size: 14px;
+}
+.main-footer img {
+  width: 60px;
+  height: 60px;
+}
+/*** 
+
+====================================================================
+	Scroll To Top style
+====================================================================
+
+***/
+.scroll-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 50px;
+  text-align: center;
+  z-index: 100;
+  cursor: pointer;
+  background: #444444;
+  display: none;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+}
+.scroll-to-top:hover span {
+  transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  -webkit-transform: translateY(-8px);
+  -o-transform: translateY(-8px);
+  transition: all 800ms ease;
+  -moz-transition: all 800ms ease;
+  -o-transition: all 800ms ease;
+  -webkit-transition: all 800ms ease;
+}
+/*** 
+
+====================================================================
+	公司理念
+====================================================================
+
+ ***/
+.philosophy {
+  border-bottom: 1px solid #ccc;
+  background-color: #ffffff;
+}
+.section-title hr {
+  border-color: #5788CD;
+  border-width: 4px;
+  width: 60px;
+  float: left;
+  clear: both;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.about-text h4,
+.about-text h2 {
+  text-align: left;
+}
+.section-title {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+/*** 
+
+====================================================================
+	team
+====================================================================
+
+ ***/
+.team .head_title {
+  max-width: 790px;
+  margin: 10px auto;
+}
+.team .teamPic {
+  padding: 10px 50px 30px;
+}
+/*** 
+
+====================================================================
+	招聘信息
+====================================================================
+
+ ***/
+.pricing_item {
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.pricing_head {
+  background-color: #f7f7f7;
+}
+.p-bottom-100 {
+  padding-bottom: 100px;
+}
+.p-top-30 {
+  padding-top: 1.875rem;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.pricing_price_border {
+  background-color: #5788CD;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 18.6%;
+  left: 25%;
+  right: 25%;
+}
+.pricing_price_border .pricing_price {
+  background-color: #5788CD;
+  border: 2px solid;
+  border-color: #ffffff;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding-top: 23%;
+  color: #ffffff;
+}
+.pricing_body {
+  overflow: hidden;
+}
+.p-top-110 {
+  padding-top: 110px;
+}
+.p-bottom-60 {
+  padding-bottom: 5rem;
+}
+.pricing_body ul {
+  width: 55%;
+  margin: 0 auto;
+}
+.pricing_body ul li i {
+  margin-right: 10px;
+}
+/*** 
+
+====================================================================
+	联系方式
+====================================================================
+
+ ***/
+section.contact {
+  padding-top: 50px;
+}
+.contact-info {
+  text-align: center;
+  font-size: 22px;
+}
+.contact .gdMap {
+  width: 60%;
+  height: 400px;
+  background-color: #999;
+  margin: 0 auto 15px;
+}
+.info-mail {
+  width: 60%;
+  margin: 0 auto;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #5788CD;
+}
+.info-mail .mail-active {
+  color: #ffffff;
+}
+.address-bj {
+  font-size: 14px;
+  padding: 10px 0 5px;
+}
+.address-sz {
+  font-size: 14px;
+  padding: 5px 0 10px;
+}
+.contact .title {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.contact-info .title {
+  border-bottom: 1px solid #999;
+}
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  text-align: center;
+}
+.contact .social {
+  margin: 20px 0 30px;
+}
+.contact .social li {
+  display: inline-block;
+  line-height: 32px;
+  padding: 10px 12px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  transition: margin 0.4s ease;
+  -moz-transition: margin 0.4s ease;
+  -o-transition: margin 0.4s ease;
+  -webkit-transition: margin 0.4s ease;
+  background-color: #ffffff;
+  border: 1px solid #5788cda6;
+}
+.contact .social li a {
+  color: #5788CD;
+}
+.contact .social li:hover {
+  background-color: #5788CD;
+  transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+}
+.contact .social li:hover a {
+  color: #ffffff;
+}
+.contact .social span {
+  font-size: 22px;
+}
+/*** 
+
+====================================================================
+	高德地图标注
+====================================================================
+
+ ***/
+.marker {
+  color: #333;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  font-size: 12px;
+  font-family: "SourceNormal";
+  margin-left: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+.gdMap img {
+  width: auto;
+}
+/*** 
+
+====================================================================
+	技术支持
+====================================================================
+
+ ***/
+.support {
+  background-color: #f5f7f9;
+}
+.support-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  -ms-border-radius: 80px;
+  -o-border-radius: 80px;
+  border: 1px solid #5788cd24;
+  padding: 20px 22px;
+  font-size: 35px;
+  background-color: #ffffff;
+  color: #5788CD;
+  margin: 10px;
+}
+.support-text {
+  margin: 15px 0;
+}
+button.btn.btn-primary.center-block {
+  margin-top: 35px;
+}
