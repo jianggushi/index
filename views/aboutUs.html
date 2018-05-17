@@ -15,16 +15,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
   <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-  <style type="text/css">
-    /*锚点偏移*/
-    .targey-fix {
-      position: relative;
-      top: -70px;
-      height: 0;
-      overflow: hidden;
-      display: block;
-    }  
-  </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116762798-1"></script>
   <script>
@@ -36,136 +26,71 @@
   </script>
 </head>
 <body data-spy="scroll" data-target=".navbar-example" data-offset="180">
+  <h1 style="display:none">fanhantech</h1>
+  <div class="bg"></div>
   <div class="page-wrapper">
     <!-- Main Header-->
-    <header class="main-header header-style-three">
-      <!-- Main Box -->
-      <div class="main-box">
-        <div class="auto-container container">
-          <div class="outer-container clearfix">
-            <!--Logo Box-->
-            <div class="logo-box">
-              <div class="logo">
-                <a href="/en">
-                  <img src="/static/images/logo-2.png" alt="FanHAN" >
-                </a>
-              </div>
-            </div>
-            <!--Nav Outer-->
-            <div class="nav-outer clearfix">
-              <!-- Main Menu -->
-              <nav class="main-menu">
-                <div class="navbar-header">
-                  <!-- Toggle Button -->
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                </div>
-                <div class="navbar-collapse collapse clearfix">
-                  <ul class="navigation clearfix nav navbar-nav">
-                    <li>
-                      <a href="/en#we_do">SERVICES</a>
-                    </li>
-                    <li>
-                      <a href="/en#flow">SERVICES FLOW</a>
-                    </li>
-                    <li>
-                      <a href="/en#business">BUSINESS</a>
-                    </li>
-                    <li>
-                      <a href="/en#advantage">ADVANTAGE</a>
-                    </li>
-                    <li>
-                      <a href="/en#Resources">RESOURCES</a>
-                    </li>
-                    <li>
-                      <a href="/login">PLATFORM</a>
-                    </li>
-                    <li class="visible-xs  language">
-                      <span><a href="/about">中文</a></span> /
-                      <span> <a href="/en/about">EN</a></span>
-                    </li>
-                  </ul>
-                  <ul class="navigation pull-right clearfix nav navbar-nav hidden-xs ">
-                    <li class="dropdown dropdown2 ">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">language</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="/about">中文</a></li>
-                        <li><a href="/en/about">ENGLISH</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-              <!-- Main Menu End-->
-            </div>
-            <!--Nav Outer End-->
-          </div>
-        </div>
-      </div>
-      <!--Sticky Header-->
-      <div class="sticky-header">
-        <div class="auto-container container clearfix">
-          <!--Logo-->
-          <div class="logo pull-left">
-            <a href="/en" class="img-responsive">
-              <img src="/static/images/logo-1.png" alt="FanHAN" title="FanHAN-logo" >
+    <header class="mainHeader header-top">
+      <nav class="navbar-default" id="navbar-example" role="navigation">
+        <div class="container-fluid container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+              aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/en">
+              <img alt="fanhan logo" id="headerLogo" src="/static/images/logo-2.png">
             </a>
           </div>
-          <!--Right Col-->
-          <div class="right-col">
-            <!-- Main Menu -->
-            <nav class="main-menu">
-              <div class="navbar-header">
-                <!-- Toggle Button -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-              <div class="navbar-collapse collapse clearfix navbar-example">
-                <ul class="navigation clearfix nav navbar-nav">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="/en#we_do">SERVE</a>
+              </li>
+              <li>
+                <a href="/en#flow">FLOW</a>
+              </li>
+              <li>
+                <a href="/en#business">BUSINESS</a>
+              </li>
+              <li>
+                <a href="/en#advantage">ADVANTAGE</a>
+              </li>
+              <li>
+                <a href="/en#Resources">RESOURCES</a>
+              </li>
+              <li>
+                <a href="/login">PLATFORM</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LANGUAGE
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
                   <li>
-                    <a href="/en#we_do">SERVICES</a>
+                    <a href="/about">中文</a>
                   </li>
                   <li>
-                    <a href="/en#flow">SERVICES FLOW</a>
-                  </li>
-                  <li>
-                    <a href="/en#business">BUSINESS</a>
-                  </li>
-                  <li>
-                    <a href="/en#advantage">ADVANTAGE</a>
-                  </li>
-                  <li>
-                    <a href="/en#Resources">RESOURCES</a>
-                  </li>
-                  <li>
-                    <a href="/login">PLATFORM</a>
+                    <a href="/en/about">ENGLISH</a>
                   </li>
                 </ul>
-                 <ul class="navigation pull-right clearfix nav navbar-nav">
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >language</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="/about">中文</a></li>
-                      <li><a href="/en/about">ENGLISH</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-            <!-- Main Menu End-->
+              </li>
+            </ul>
           </div>
+          <!-- /.navbar-collapse -->
         </div>
-      </div>
-      <!--End Sticky Header-->
+        <!-- /.container-fluid -->
+      </nav>
     </header>
     <!-- Corporate Philosophy  -->
-    <section class="philosophy">
+    <section class="philosophy section-spacing">
       <a id="philosophy" class="targey-fix"></a>
       <div class="container">
         <div class="row">
@@ -205,28 +130,26 @@
       </div>
     </section>
     <!--S  team-->
-    <section class="wow fadeIn team" data-wow-duration="3s">
+    <section class="team bg-white section-spacing" >
       <a id="team" class="targey-fix"></a>
-      <div class="container">
-        <div class="head_title text-center">
-          <h2>OUR TEAM</h2>
+      <div class="container wow fadeIn" data-wow-duration="3s">
+          <h2 class="text-center">OUR TEAM</h2>
           <div class="teamPic">
             <img src="/static/images/about-2.jpg">
           </div>
           <!-- <div class="separator_auto"></div> -->
-          <p>The core team of Fanhan Tech is a group of young and energetic youth, including advanced  team of research and development, experienced project manager team. These talented people from different fields, such as voice, picture and video, which are committed to promoting the future development of artificial intelligence.</p>
-        </div>
+          <article><p>The core team of Fanhan Tech is a group of young and energetic youth, including advanced  team of research and development, experienced project manager team. These talented people from different fields, such as voice, picture and video, which are committed to promoting the future development of artificial intelligence.</p></article>
       </div>
     </section>
     <!--E  team-->
     <!--S  pricing-->
-    <!-- <section id="pricing" class="pricing lightbg wow fadeInUp" data-wow-duration="3s">
+    <!-- <section id="pricing" class="pricing lightbg  bg-white section-spacing" >
       <a class="targey-fix" id="recruit"></a>
-      <div class="container">
+      <div class="container wow fadeInUp" data-wow-duration="3s">
         <div class="row">
           <div class="main_pricing roomy-100">
             <div class="col-md-8 col-md-offset-2 col-sm-12">
-              <div class="head_title text-center">
+              <div class="text-center">
                 <h2>JOIN US</h2>
                 <div class="separator_auto"></div>
                 <p>We're here to wait for you</p>
@@ -302,44 +225,57 @@
     </section> -->
     <!--E  pricing-->
     <footer class="main-footer">
-      <div class="auto-container">
-        <!--Footer Bottom-->
+      <div class="container">
         <div class="footer-bottom">
-          <div class="row clearfix">
-            <!--Column-->
+          <div class="row">
             <div class="column col-md-5 col-sm-5 col-xs-12">
               <div class="logo">
                 <a href="/en">
-                  <img src="/static/images/logo-footer.png" alt="">
+                  <img src="/static/images/logo-footer.png" alt="fanhan logo">
                 </a>
               </div>
               <div class="copyright">© 2017
                 <a href="/en">FanhanTech.</a> All rights reserved</div>
             </div>
-            <!--Column-->
             <div class="column col-md-7 col-sm-7 col-xs-12">
               <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12">
                   <ul class="footer-info">
                     <li>ABOUT US</li>
-                    <li><a href="/en/about#philosophy">Values</a></li>
-                    <li><a href="/en/about#team">Team</a></li>
-                    <li><a href="/en/about#recruit">Hiring</a></li>
+                    <li>
+                      <a href="/en/about#philosophy">Values</a>
+                    </li>
+                    <li>
+                      <a href="/en/about#team">Team</a>
+                    </li>
+                    <li>
+                      <a href="/en/about#recruit">Hiring</a>
+                    </li>
                   </ul>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                   <ul class="footer-info">
                     <li>Entrance</li>
-                    <li><a href="#">Accept Task</a></li>
-                    <li><a href="#">Release Task</a></li>
+                    <li>
+                      <a>Accept Task</a>
+                    </li>
+                    <li>
+                      <a>Release Task</a>
+                    </li>
                   </ul>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                   <ul class="footer-info">
                     <li>CONTACT US</li>
-                    <li><a href="/en/contact">Business Support</a></li>
-                    <li><a href="/en/contact#support">Project Support</a></li>
-                    <li><a href="/en/contact#support">Technical Support</a></li>
+                    <li>
+                      <a href="/en/contact">Business Support</a>
+                    </li>
+                    <li>
+                      <a href="/en/contact#support">Project Support</a>
+                    </li>
+                    <li>
+                      <a href="/en/contact#support">Technical Support</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -356,7 +292,7 @@
    </div>
   <script src="/static/jquery@3.3.1/dist/jquery.min.js"></script>
   <script src="/static/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-  <script src="/static/wow/dist/wow2.min.js"></script>
+  <script src="/static/wow/dist/wow.min.js"></script>
   <script src="/static/index@0.1.0/js/script.js"></script>
   </script>
   <script>
