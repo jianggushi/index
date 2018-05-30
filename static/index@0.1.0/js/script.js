@@ -46,6 +46,10 @@
 		wow.init();
 	}
 
+	// get the current year 
+    var date=new Date;
+    var _year = date.getFullYear();  
+    $('#year').text(_year);
 
 	/* ==========================================================================
 	   When document is Scrollig, do

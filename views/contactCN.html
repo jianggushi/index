@@ -73,6 +73,12 @@
               <li>
                 <a href="/login">标注平台</a>
               </li>
+              <li class="visible-lg">
+                <a href="/contact">联系我们</a>
+              </li>
+              <li class="visible-lg">
+                <a href="/about">关于我们</a>
+              </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
@@ -106,14 +112,14 @@
         <div class="gdMap" id="container">
         </div>
         <div class="span9 center contact-info">
-          <p class="wow fadeInDown phone-number" data-wow-delay="0.1s">0512-6813-8573(苏州--客户)</p>
-          <p class="wow fadeInDown phone-number" data-wow-delay="0.3s">0512-6813-8731(苏州--标注员)</p>
-          <p class="wow fadeInDown phone-number" data-wow-delay="0.3s">010-68778875(北京)</p>
+          <p class="wow fadeInDown phone-number" data-wow-delay="0.1s">0512-6813-8573(客户业务咨询)</p>
+          <p class="wow fadeInDown phone-number" data-wow-delay="0.3s">0512-6813-8731(标注员服务咨询)</p>
+          <!-- <p class="wow fadeInDown phone-number" data-wow-delay="0.3s">010-68778875(北京)</p> -->
           <p class="info-mail wow fadeInDown" data-wow-delay="0.5s">
-            <a class="mail-active" href="mailto:fanhan@fanhantech.com">fanhan@fanhantech.com</a>
+            <a class="mail-active" href="mailto:fanhan@fanhantech.com">fanhan@fanhantech.com(商务技术支持)</a>
           </p>
-          <p class="wow fadeInDown address-bj" data-wow-delay="0.7s">苏州市工业园区若水路388号苏州纳米技术国家大学科技园E栋603</p>
-          <p class="wow fadeInDown address-sz" data-wow-delay="0.7s">北京市昌平区珠江摩尔大厦3-2-1012</p>
+          <p class="wow fadeInDown address-bj" data-wow-delay="0.7s">苏州纳米技术国家大学科技园E栋603</p>
+          <!-- <p class="wow fadeInDown address-sz" data-wow-delay="0.7s">北京市昌平区珠江摩尔大厦3-2-1012</p> -->
           <div class="title wow fadeInDown" data-wow-delay="0.8s">
             <h3>其他联系方式</h3>
           </div>
@@ -208,20 +214,20 @@
       <div class="container">
         <div class="footer-bottom">
           <div class="row">
-            <div class="column col-md-5 col-sm-5 col-xs-12">
+            <div class="column col-md-6 col-sm-6 col-xs-12">
               <div class="logo">
                 <a href="/">
                   <img src="/static/images/logo-footer.png" alt="fanhan logo">
                 </a>
               </div>
-              <div class="copyright">© 2018
-                <a href="/en">苏州泛函信息科技有限公司.</a> 版权所有</div>
+              <div class="copyright">© <span id="year">2017</span>
+                <a href="/">苏州泛函信息科技有限公司.</a> 保留所有权 | <a target="_blank" rel="noopener noreferrer"  href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=FFWrSyhItkR12JyQvVNDHkhgGM-2Ox2hSfsZzl7shGbnXl4xhTF5!-736616813">京ICP备16056116号-1</a></div>
             </div>
-            <div class="column col-md-7 col-sm-7 col-xs-12">
+            <div class="column col-md-6 col-sm-6 col-xs-12">
               <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12">
                   <ul class="footer-info">
-                    <li>关于我们</li>
+                    <li><a href="/about" style="font-size:18px">关于我们</a></li>
                     <li>
                       <a href="/about#philosophy">公司理念</a>
                     </li>
@@ -246,7 +252,7 @@
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                   <ul class="footer-info">
-                    <li>联系我们</li>
+                    <li><a href="/contact" style="font-size:18px">联系我们</a></li>
                     <li>
                       <a href="/contact">商务支持</a>
                     </li>
@@ -276,7 +282,7 @@
   <script src="/static/index@0.1.0/js/script.js"></script>
   <script type="text/javascript" src="/static/index@0.1.0/js/mapGd.js"></script>
   <script>
-    $('body').scrollspy({ target: '.navbar-example' })  
+    $('body').scrollspy({ target: '.navbar-example' });
   </script>
 </body>
 
