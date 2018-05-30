@@ -10,7 +10,7 @@ font-family: 'Lato', sans-serif;*/
 
 @import url('../../font-awesome@4.7.0/dist/css/font-awesome.min.css');
 @import url('../../flaticon/css/flaticon.css');
-@import url('../../animate.css@3.5.2/dist/animate.min.css');
+@import url('../../animate.css@3.5.2/dist/animate.css');
 @font-face{
     font-family: 'SourceNormal';
     src : url('../fonts/SourceHanSans-Normal.otf');
@@ -69,7 +69,7 @@ font-family: 'Lato', sans-serif;*/
     -o-transform:@attr; 
  }
  .bg-blue {
-    background-color: #5788c0cf;
+    background-color: rgba(87, 136, 192, .81);
 }
 .bg-white {
     background-color: @white;
@@ -320,8 +320,8 @@ header.mainHeader.fixed-nav{
     overflow:hidden;
     &:hover{
         img.serve-img{
-            .getTransform(scale(1.2));
-            .getTransition(transform);
+            .getTransform(scale(1.5));
+            .getTransition(transform,.8s);
         }
     }
 }
@@ -362,7 +362,7 @@ header.mainHeader.fixed-nav{
         &:hover{
             .font-white;
             background-color: transparent !important;
-            border-bottom-color: #5788c0db !important;
+            border-bottom-color: rgba(87, 136, 192, .81) !important;
         }
     }
     .tab-content{
@@ -451,7 +451,7 @@ header.mainHeader.fixed-nav{
 }
 .model li.active a{
 	background-color: transparent !important;
-	border-bottom-color: #5788c0db !important;
+	border-bottom-color: rgba(87, 136, 192, .81) !important;
     .font-white;
     &:focus{
         .font-white;
