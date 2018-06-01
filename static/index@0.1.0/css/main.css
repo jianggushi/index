@@ -165,7 +165,7 @@ nav.navbar-default img {
   width: 35px;
 }
 .header-top nav.navbar-default {
-  background-color: #337ab7c4;
+  background-color: rgba(51, 122, 183, 0.77);
 }
 .header-scoll nav.navbar-default {
   background-color: #ffffff;
@@ -252,7 +252,7 @@ header.mainHeader.fixed-nav {
  ***/
 .short-banner {
   padding: 40px 0;
-  background: #337ab7c4;
+  background-color: rgba(51, 122, 183, 0.77);
 }
 .short-banner h4 {
   font-size: 30px;
@@ -641,7 +641,7 @@ header.mainHeader.fixed-nav {
 .main-footer {
   position: relative;
   padding: 20px 10px 20px;
-  background: #337ab7c4;
+  background-color: rgba(51, 122, 183, 0.77);
 }
 .main-footer .footer-bottom {
   position: relative;
