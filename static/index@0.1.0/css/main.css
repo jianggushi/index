@@ -840,40 +840,37 @@ header.mainHeader.fixed-nav {
 section.contact {
   padding-top: 50px;
 }
+.contact .text {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
 .contact-info {
   text-align: center;
-  font-size: 22px;
+  font-size: 16px;
+}
+.contact h4 {
+  margin-bottom: 15px;
 }
 .contact .gdMap {
-  width: 60%;
-  height: 400px;
+  height: 300px;
   background-color: #999;
   margin: 0 auto 15px;
 }
 .info-mail {
   width: 60%;
-  margin: 0 auto;
-  padding: 5px;
+  margin: 25px auto 15px;
+  padding: 15px;
   color: #ffffff;
   background-color: #5788CD;
+  font-size: 18px;
 }
 .info-mail .mail-active {
   color: #ffffff;
-}
-.address-bj {
-  font-size: 14px;
-  padding: 10px 0 5px;
-}
-.address-sz {
-  font-size: 14px;
-  padding: 5px 0 10px;
 }
 .contact .title {
   text-align: center;
   padding: 10px;
   margin-bottom: 30px;
-}
-.contact-info .title {
   border-bottom: 1px solid #999;
 }
 .centered {
