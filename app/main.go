@@ -15,6 +15,6 @@ func main() {
 }
 
 func page_not_found(rw http.ResponseWriter, r *http.Request) {
-	t, _ := template.New("404.html").ParseFiles("../views/404.html")
+	t, _ := template.New("404.html").ParseFiles("../views/error/404.html")
 	t.Execute(rw, nil)
 }

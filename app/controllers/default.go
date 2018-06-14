@@ -14,11 +14,11 @@ func (c *MainController) Index() {
 	lang := c.Ctx.Input.Param(":lang")
 	switch lang {
 	case "zh":
-		c.TplName = "indexCN.html"
+		c.TplName = "index/indexCN.html"
 	case "en":
-		c.TplName = "indexEN.html"
+		c.TplName = "index/indexEN.html"
 	default:
-		c.TplName = "indexCN.html"
+		c.TplName = "index/indexCN.html"
 	}
 }
 
@@ -28,11 +28,11 @@ func (c *MainController) About() {
 	lang := c.Ctx.Input.Param(":lang")
 	switch lang {
 	case "zh":
-		c.TplName = "aboutUsCN.html"
+		c.TplName = "index/aboutUsCN.html"
 	case "en":
-		c.TplName = "aboutUs.html"
+		c.TplName = "index/aboutUs.html"
 	default:
-		c.TplName = "aboutUsCN.html"
+		c.TplName = "index/aboutUsCN.html"
 	}
 }
 
@@ -42,10 +42,10 @@ func (c *MainController) Contact() {
 	lang := c.Ctx.Input.Param(":lang")
 	switch lang {
 	case "zh":
-		c.TplName = "contactCN.html"
+		c.TplName = "index/contactCN.html"
 	case "en":
-		c.TplName = "contact.html"
+		c.TplName = "index/contact.html"
 	default:
-		c.TplName = "contactCN.html"
+		c.TplName = "index/contactCN.html"
 	}
 }

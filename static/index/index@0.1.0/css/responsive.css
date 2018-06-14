@@ -1,0 +1,233 @@
+/* Conpress Business & Agency HTML Template */
+
+@media only screen and (max-width: 1359px){
+	.logoSlider{
+		width: 130px;
+	}
+	.carousel-caption h3{
+		font-size: 54px;
+	}
+	.carousel-caption p{
+		font-size: 24px;
+	}
+}
+@media only screen and (max-width: 1279px){
+	.core h2{
+		font-size: 18px;
+	}
+	.core article.info1{
+		padding: 50px 0px 0px 50px;
+	}
+	.core article.info2{
+	    padding: 55px 0px 0px 18px;
+	}
+	.core article.info3 {
+		padding: 45px 0px 0px 15px;
+		line-height: 1.6;
+	}
+	#main{
+		width: 800px;
+		height: 400px;
+	}
+}
+@media only screen and (max-width: 1140px){
+	.bannerBox{
+		height: auto;
+	}
+	.bg{
+		background-size: cover;
+	}
+}
+@media only screen and (max-width: 1023px){
+	.container-fluid.container{
+		width: 100%;
+	}
+	.short-banner-btn{
+		display: none;
+	}
+	.step-item:after{
+		display: none;
+	}
+	.model-top{
+		padding-bottom: 0px;
+	}
+	.dataType-text h3{
+		margin-left: 0;
+		margin-bottom: 35px;
+	}
+	#main{
+		width: 750px;
+		height: 350px;
+	}
+	
+}
+@media only screen and (max-width: 799px){
+	.nav>li>a{
+		padding:15px 10px;
+	}
+	.logoSlider {
+		width: 100px;
+	}
+	.model .nav>li>a{
+		padding:10px;
+	}
+	.contact .gdMap{
+		height: 250px;
+	}
+	section.contact{
+		padding-top: 40px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.bg{
+		background-size: cover;
+	}
+	h2 {
+		font-size: 32px;
+	}
+	.section-spacing {
+		padding-top: 25px;
+		padding-bottom: 30px;
+	}
+	.navbar-default .navbar-toggle{
+		border-color: transparent;
+	}
+	.header-top nav.navbar-default{
+		background-color:#337ab7c4;
+	}
+	.header-scoll nav.navbar-default{
+		background-color:#fff;
+	}
+	.header-top .navbar-default .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+	.navbar-default .navbar-toggle:focus,
+	.navbar-default .navbar-toggle:hover{
+		background-color: transparent;
+	}
+	.header-scoll .navbar-default .navbar-toggle .icon-bar {
+		background-color: #337ab7;
+	}
+	.navbar-toggle .icon-bar{
+		width: 26px;
+		height: 4px;
+	}
+	.header-top .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+		color: #fff;
+	}
+	.header-scoll .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+		color: #333;
+	}
+	.carousel-caption {
+		top: 0%;
+		right:10%;
+		left: 10%;
+	}
+	.logoSlider {
+		width: 90px;
+	}
+	.carousel-caption h3 {
+		font-size: 36px;
+	}
+	.short-banner h4{
+		font-size: 14px;
+	}
+	.short-banner{
+		padding: 20px 0;
+	}
+	.title-note {
+		margin: 10px auto;
+		font-size: 14px;
+	}
+	.serve-type{
+		margin-top: 15px;
+	}
+	.core{
+		margin-top: 15px;
+	}
+	.inner-box{
+		margin-top: 0px;
+	}
+	#main{
+		width: 700px;
+		height: 300px;
+	}
+	.main-footer{
+		text-align: center;
+		background:#5788c0cf;
+	}
+	
+}
+@media only screen and (max-width: 599px){
+	
+	.carousel-caption {
+		bottom: 0px;
+		padding-bottom: 0px;
+	}
+	.logoSlider {
+		width: 75px;
+	}
+	.carousel-caption h3 {
+		font-size: 28px;
+	}
+	.carousel-caption p {
+		font-size: 14px;
+	}
+	.carousel-caption button{
+		margin: 0 auto;
+	}
+	#main{
+		width: 300px;
+		height: 180px;
+	}
+	.contact .gdMap{
+		width: 100%;
+	}
+	.contact .social li {
+		padding: 3px 8px;
+		border-radius: 20px;
+	    width: 40px;
+	    height: 40px;
+	    margin: 0 2px;
+	}
+	.info-mail{
+		width: 90%;
+	}
+	.info-mail .mail-active{
+		font-size: 18px;
+	}
+	.phone-number{
+		font-size: 16px;
+	}
+	button.btn.btn-primary.center-block{
+		margin-top: 5px;
+		margin-bottom: 15px;
+	}
+}
+@media only screen and (max-width: 376px) {
+	.carousel-caption {
+		top: 0%;
+		right:5%;
+		left: 5%;
+	}
+	.logoSlider {
+		width: 60px;
+	}
+	.carousel-caption h3 {
+		font-size: 24px;
+	}
+	.carousel-caption p {
+		font-size: 13px;
+	}
+	.support-icon {
+	    width: 60px;
+	    height: 60px;
+	    border-radius: 30px;
+	    padding: 15px 16px;
+	    font-size: 28px;
+	    margin: 18px 10px;
+	}
+	.support .col-xs-4 {
+	    width: 25%;
+	}
+}
