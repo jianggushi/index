@@ -6,10 +6,6 @@
 /*font-family: 'Poppins', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Lato', sans-serif;*/
-@font-face {
-  font-family: 'SourceNormal';
-  src: url('../fonts/SourceHanSans-Normal.otf');
-}
 /*** 
 
 ====================================================================
@@ -50,7 +46,7 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
-  font-family: 'SourceNormal', sans-serif;
+  font-family: sans-serif;
   background-color: #ffffff;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -96,13 +92,13 @@ h6 {
   margin: 0px;
   background: none;
   line-height: 1.6em;
-  font-family: 'SourceNormal', sans-serif;
+  font-family: sans-serif;
 }
 input,
 button,
 select,
 textarea {
-  font-family: 'SourceNormal', sans-serif;
+  font-family: sans-serif;
 }
 p {
   position: relative;
@@ -930,7 +926,6 @@ section.contact {
   border: 1px solid #ccc;
   white-space: nowrap;
   font-size: 12px;
-  font-family: "SourceNormal";
   margin-left: 15px;
   background-color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
