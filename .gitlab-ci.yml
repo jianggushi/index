@@ -7,6 +7,6 @@ deploy:
     - echo "start deploy....."
     # - deploy
   only:
-    - master
+    - develop
   tags:
     - shell
