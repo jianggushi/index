@@ -1,0 +1,12 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+    - echo "start deploy....."
+    # - deploy
+  only:
+    - master
+  tags:
+    - shell
