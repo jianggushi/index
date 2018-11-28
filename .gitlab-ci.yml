@@ -9,4 +9,4 @@ deploy:
   only:
     - develop
   tags:
-    - shell
+    - ci
