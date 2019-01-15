@@ -1,0 +1,16 @@
+{
+  "name": "webgs",
+  "version": "1.0.0",
+  "description": "这个项目提供了一个 local server 方便调试首页等静态页面。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -p 8088"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@10.0.0.130:fanhan-web/index.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
