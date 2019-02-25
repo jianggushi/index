@@ -155,6 +155,12 @@
 .app-feature-img {
   max-width: 400px;
 }
+@media screen and (max-width: 992px) {
+  .app-bg::before {
+    height: 420px;
+    width: 420px;
+  }
+}
 @media screen and (max-width: 768px) {
   .app-bg::before {
     height: 380px;
