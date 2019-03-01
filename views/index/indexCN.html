@@ -27,6 +27,17 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
+  <style>
+    .app-box {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      padding: 1rem;
+      text-align: center;
+      display: none;
+    }
+  </style>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -513,6 +524,11 @@
       </div>
     </footer>
     <!--End pagewrapper-->
+    
+    <div class="app-box" id="appBox">
+      <input class="btn btn-primary" type="button" value="打开APP" onclick="openApp()">
+      <!-- <a class="btn btn-primary" href="#" role="button"></a> -->
+    </div>
     <!--Scroll to top-->
     <div class="scroll-to-top scroll-to-target" data-target="html" style="display: block;">
       <span class="fa fa-arrow-up"></span>
@@ -556,10 +572,72 @@
     }
     //判断是否移动端
     if (browser.versions.mobile || browser.versions.android || browser.versions.ios) {
-      
+      var appBox = document.getElementById('appBox')
+      appBox.style.display = 'block'
     } else {
       window.onresize = function () {
         location.reload();
+      }
+    }
+    // app打开
+    var  createIframe=(function(){
+      var iframe;
+      return function(){
+        if(iframe){
+          return iframe;
+        }else{
+          iframe = document.createElement('iframe');
+          iframe.style.display = 'none';
+          document.body.appendChild(iframe);
+          return iframe;      
+        }
+      }
+    })()
+    var baseScheme = "app://com.fanhantech.fanhandata"
+    var createScheme=function(options){
+      // var urlScheme=baseScheme;
+      // for(var item in options){
+      //     urlScheme=urlScheme+item + '=' + encodeURIComponent(options[item]) + "&";
+      // }
+      // urlScheme = urlScheme.substring(0, urlScheme.length - 1);
+      // return encodeURIComponent(urlScheme);
+      return baseScheme
+    }
+    var openApp=function(){
+      var localUrl=createScheme();
+      var openIframe=createIframe();
+      if(browser.versions.ios){
+        //判断是否是ios,具体的判断函数自行百度
+        window.location.href = localUrl;
+        var loadDateTime = Date.now();
+        setTimeout(function () {
+            var timeOutDateTime = Date.now();
+            if (timeOutDateTime - loadDateTime < 1000) {
+              window.location.href = "http://app.mi.com/details?id=com.fanhantech.fanhandata";
+            }
+        }, 25);
+      }else if(browser.versions.android){
+        //判断是否是android，具体的判断函数自行百度
+        if (browser.versions.webKit) {
+          //chrome浏览器用iframe打不开得直接去打开，算一个坑
+          window.location.href = localUrl;
+        } else {
+          //抛出你的scheme
+          openIframe.src = localUrl;
+        }
+        var loadDateTime = Date.now();
+        setTimeout(function () {
+          var timeOutDateTime = Date.now();
+          if (timeOutDateTime - loadDateTime < 1000) {
+            window.location.href = "http://app.mi.com/details?id=com.fanhantech.fanhandata";
+          }
+        }, 500);
+      }else{
+        //主要是给winphone的用户准备的,实际都没测过，现在winphone不好找啊
+        openIframe.src = localUrl;
+        setTimeout(function () {
+          window.location.href = "http://app.mi.com/details?id=com.fanhantech.fanhandata";
+        }, 500);
       }
     }
   </script>

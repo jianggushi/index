@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036) -->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>泛函科技</title>
+  <!-- Stylesheets -->
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <meta name="keywords" content="Fanhan,泛函科技，数据标注,数据采集,数据清洗,人工智能,人脸识别,无人驾驶,任务平台，标注平台">
+  <meta name="description" content="Fanhan泛函科技，致力于人工智能语音视频、图像文本的数据采集、数据清洗、数据标注等服务。泛函科技拥有30多个国家、50多种语言的稳定数据生产源和全球上万的标注资源，以高效率，高性价比，高品质的数据和服务，推动人工智能生态链的建设。">
+  <!-- Responsive -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+  <!-- Baidu Analytics -->
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5ed70e541d0182a782a07352d614ed06";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <style>
+    .app-box {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      top: 0;
+      /* padding: 1rem; */
+      /* height: 100%;
+      width: 100%;
+      line-height: 100%; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 3rem;
+      /* text-align: center; */
+      /* display: block; */
+    }
+    .open-download {
+      border-color: #05a8ef;
+      color: #05a8ef;
+    }
+    .open-download:hover {
+      color: #05a8ef;
+    }
+    .open-download:focus {
+      color: #05a8ef;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app-box" id="appBox">
+    <div>
+      <!-- <h3>正在打开app...</h3> -->
+      <img src="../../static/index/images/download.png" alt="download" style="width:300px;height:300px;margin-bottom: 2rem;">
+      <div class="text-center">
+        <a class="btn btn-outline-primary open-download" href="http://app.mi.com/details?id=com.fanhantech.fanhandata" role="button">立刻下载泛函APP</a>
+        <!-- <input id="btnOpen" class="btn btn-outline-primary open-download" type="button" value="立刻下载泛函APP"> -->
+      </div>
+      <!--  -->
+    </div>
+  </div>
+  <!-- <script src="/static/index/index@0.1.0/js/mobile.js"></script> -->
+  <script>
+    var search = window.location.search.slice(1).split('&')
+    var id= search[0]
+    var browser = {
+      versions: function () {
+        var u = navigator.userAgent, app = navigator.appVersion;
+        return {
+          trident: u.indexOf('Trident') > -1, //IE内核
+          presto: u.indexOf('Presto') > -1, //opera内核
+          webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+          gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,//火狐内核
+          mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+          ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+          android: u.indexOf('Android') > -1 || u.indexOf('Adr') > -1, //android终端
+          iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+          iPad: u.indexOf('iPad') > -1, //是否iPad
+          webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+          weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
+          qq: u.match(/\sQQ/i) == " qq" //是否QQ
+        };
+      }(),
+      language: (navigator.browserLanguage || navigator.language).toLowerCase()
+    }
+    var input = document.getElementById('btnOpen')
+    // console.log(input)
+    window.onload = function () {
+      //判断是否移动端
+      if (browser.versions.mobile) {
+          // input.onclick = openApp()
+          // alert('mobile')
+          openApp()
+      }
+    }
+    // app打开
+    var  createIframe=(function(){
+      var iframe;
+      return function(){
+        if(iframe){
+          return iframe;
+        }else{
+          iframe = document.createElement('iframe');
+          iframe.style.display = 'none';
+          document.body.appendChild(iframe);
+          return iframe;      
+        }
+      }
+    })()
+    var baseScheme = "app://com.fanhantech.fanhandata"+ '/?' + id
+    var createScheme=function(options){
+      let url = baseScheme
+      return url
+    }
+    function openApp (){
+      var localUrl=createScheme();
+      var openIframe=createIframe();
+      if(browser.versions.ios){
+        //判断是否是ios,具体的判断函数自行百度
+        window.location.href = localUrl;
+      }else if(browser.versions.android){ 
+        //判断是否是android，具体的判断函数自行百度
+        if (browser.versions.webKit) {
+          // alert('webKit')
+          //chrome浏览器用iframe打不开得直接去打开，算一个坑
+          window.location.href = localUrl;
+        } else {
+          //抛出你的scheme
+          // alert('openIframe')
+          openIframe.src = localUrl;
+        }
+        openIframe.src = localUrl;
+        // alert(openIframe)
+      }else{
+        //主要是给winphone的用户准备的,实际都没测过，现在winphone不好找啊
+        openIframe.src = localUrl;
+      }
+    }
+  </script>
+</body>
+
+</html>
