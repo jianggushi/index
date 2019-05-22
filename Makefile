@@ -9,3 +9,7 @@ deploy:
 publish: deploy
 	scp web-index.tar.bz2 root@47.104.251.44:/work/online/tag1801/clweb/
 	ssh root@47.104.251.44 "cd /work/online/tag1801/clweb; tar -xjvf web-index.tar.bz2"
+
+publish19: deploy
+	scp web-index.tar.bz2 root@10.0.0.19:/work/online/tag1801/clweb/
+	ssh root@10.0.0.19 "cd /work/online/tag1801/clweb; tar -xjvf web-index.tar.bz2"
